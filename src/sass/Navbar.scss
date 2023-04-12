@@ -1,0 +1,119 @@
+
+$font-color: #3D155F;
+$primary-color: #332FD0;
+$head-color: #F0EB8D;
+$bg-color: #F9F9F9;
+$bg2-color: #332FD0;
+$bg3-color: #FFFFFF;
+$footer-color: #3D155F;
+$font-firacode: 'Fira Code', monospace;
+
+
+nav.navbar-container{
+    position: fixed;
+    width: 100%;
+    .wrapper{
+        background: red;
+        padding: 2em 1em;
+        display: flex;
+        justify-content: space-between;
+        .logo{
+            text-decoration: none;
+            list-style: none;
+            a{
+                color: $bg-color;
+                text-decoration: none;
+                list-style: none;
+                color: $font-color
+            }
+        }
+        .menu-icon{
+            .navbar-icon{
+                color: #121212;
+                font-size: 30px;
+                cursor: pointer;
+            }
+        }
+        
+        ul.nav-items{
+            position: absolute;
+            width: 100%;
+            justify-content: center;
+            text-align: center;
+            line-height: 60px;
+            top: 98px;
+            left: -100%;
+            transition: ease-in-out .3s;
+            li.nav-item{
+                background: $head-color;
+
+                text-decoration: none;
+                list-style: none;
+                a{
+                    color: $font-color;
+                    text-decoration: none;
+                    list-style: none;
+                }
+            }
+        }
+        ul.nav-items.active{
+            left: 0;
+            transition: ease-in-out .3s;
+            a{
+                color: $bg-color;
+                text-decoration: none;
+                list-style: none;
+            }
+            .nav-link{
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .nav-link:hover{
+                transition: ease-in-out 0.3s;
+                background: $primary-color;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1200px){
+    nav.navbar-container{
+        div.wrapper{
+            div.logo{
+                align-items: center;
+                display: flex;
+                a{
+                    font-size: 20px;
+                }
+            }
+            div.menu-icon{
+                    display: none;
+            }
+
+            ul.nav-items{
+                left: 0;
+                display: flex;
+                position: unset;
+                justify-content: flex-end;
+                gap: 20px;
+                align-items: center;
+                li.nav-item{
+                    font-size: 16px;
+                    background: none;
+                    a#btn-resume{
+                        font-weight: bold;
+                        color: $bg2-color;
+                        display: flex;
+                        align-items: center;
+                        border: 2px $primary-color solid;
+                        padding: .1em .7em;
+                        gap: 10px;
+                        height: 50px;
+                    }
+                }
+            }
+        }
+    }
+}
