@@ -8,7 +8,7 @@ import {
   Outlet,
 } from "react-router-dom";
 
-import './index.css'
+import './index.scss'
 import Navbar from './components/Navbar'
 import Home from './pages/Home'
 

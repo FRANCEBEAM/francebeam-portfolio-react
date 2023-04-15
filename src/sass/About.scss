@@ -1,0 +1,169 @@
+@import '../index.scss';
+
+
+section.about-section{
+    background: $bg2-color;
+    width: 100%;
+    .wrapper{
+        padding: 3em 1em;
+        div.left-content{
+            svg.element1{
+                display: none;
+            }
+            figure{
+                padding-top: 60px;
+                justify-content: center;
+                align-items: center;
+                display: flex;
+                justify-self: center;
+            }
+        }
+        div.right-content{
+            padding-top: 50px;
+            svg.element2{
+                display: none;
+            }
+            div.content{
+                h1{
+                    font-size: 32px;
+                    color: $head-color;
+                }
+                p{
+                    line-height: 24px;
+                    padding-top: 16px;
+                    font-size: 16px;
+                    color: $font-white;
+                }
+            }
+        }
+        div.stacks{
+            padding-top: 20px;
+            line-height: 30px;
+            h1{
+                font-size: 16px;
+                font-family: $font-firacode;
+                color: $bg3-color;
+            }
+            div.technologies-stack{
+                padding-top: 30px;
+                div.front-technologies{
+                    color: $font-white;
+                  
+                    display: flex;
+                    gap: 10px;
+
+                    .icon-tech{
+                        cursor: pointer;
+                        position: relative;
+                        display: block;
+                        transition: ease-out 0.4s;
+                    }
+                    .icon-tech:hover{
+                        transform: rotate(0deg) skew(0deg) translate(0, -7px); 
+                    }
+                    .icon-tech:nth-child(1):hover{
+                        color: #FF5733;
+                    }
+                    .icon-tech:nth-child(2):hover{
+                        color: #1572B6;
+                    }
+                    .icon-tech:nth-child(3):hover{
+                        color: #FFD600;
+                    }
+                    .icon-tech:nth-child(4):hover{
+                        color: #CD6799;
+                    }
+                    .icon-tech:nth-child(5):hover{
+                        color: #0868AC;
+                    }
+                    .icon-tech:nth-child(6):hover{
+                        color: #06B6D4;
+                    }
+                    .icon-tech:nth-child(7):hover{
+                        color: #1572B6;
+                    }
+                    .icon-tech:nth-child(8):hover{
+                        color: #8512FB;
+                    }
+                }
+
+                div.back-technologies{
+                    @extend .front-technologies;
+                    .icon-tech{
+                        @extend .icon-tech;
+                    }
+                    .icon-tech:hover{
+                        @extend .icon-tech;
+                    }
+                    .icon-tech:nth-child(1):hover{
+                        color: #777BB3;
+                    }
+                    .icon-tech:nth-child(2):hover{
+                        color: #F29111;
+                    }
+                }
+                div.other-technologies{
+                    @extend .front-technologies;
+                    .icon-tech{
+                        @extend .icon-tech;
+                    }
+                    .icon-tech:hover{
+                        @extend .icon-tech;
+                    }
+                    .icon-tech:nth-child(1):hover{
+                        color: #FF41C8;
+                    }
+                    .icon-tech:nth-child(2):hover{
+                        color: #B659FF;
+                    }
+                    .icon-tech:nth-child(3):hover{
+                        color: #F05133;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (min-width:967px){
+    section.about-section{
+        .wrapper{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        
+            .right-content{
+                display: block;
+                padding: 0 4em;
+            }
+            
+        }
+    }
+}
+
+@media screen and (min-width:1200px){
+    section.about-section{
+        div.wrapper{
+            width: 1200px;
+            margin: auto 0;
+            div.left-content{
+                svg.element1{
+                    display: block;
+                    top: 1100px;
+                    position: absolute;
+                    left: 0;
+                }
+                padding-top: 4em;
+            }
+            div.right-content{
+                svg.element2{
+                    display: block;
+                    position: absolute;
+                    top: 1400px;
+                    right: 50px;
+                }
+            }
+            
+        }
+    }
+}

@@ -1,0 +1,256 @@
+@import '../index.scss';
+
+
+section.hero-section{
+    .wrapper{
+        padding: 117px 1em;
+        padding-bottom: 0px;
+        .left-orientation{
+           display: none;
+        }
+
+        .hero-content{
+            padding-top: 4em;
+            p.sub-head{
+                font-family: $font-firacode;
+                color: #666666;
+                // font-size: 14px;
+                font-size: clamp(12px, 3vw, 17px);
+            }
+            h2{
+                color: $primary-color;
+                // font-size: 17px;
+                font-size: clamp(17px, 4vw, 28px);
+                font-weight: bold;
+            }
+            h1{
+                font-weight: bold;
+                padding-top: 4px;
+                color: $primary-color;
+                // font-size: 35px;
+                font-size: clamp(32px, 8vw, 58px);
+            }
+            p.desc{
+                line-height: 24px;
+                color: $font-color;
+                padding-top: 6px;
+                // font-size: 14px;
+                font-size: clamp(12px, 7vw, 16px);
+                // max-width: 380px;
+                // max-width: clamp(380px, 9vw, 590px);
+                max-width: 470px;
+            }
+            span{
+                font-weight: bold;
+                color: $primary-color;
+            }
+            button.btn-projects{
+                color: $primary-color;
+                font-weight: bold;
+                cursor: pointer;
+                margin-top: 70px;
+                padding: 1.3em 1em;
+                background: none;
+                border: $primary-color 2px solid;
+                box-shadow: inset 0 0 0 0 $primary-color;
+                transition: ease-out 0.4s;
+                a.link-projects{
+                    gap: 10px;
+                    display: flex;
+                    align-items: center;
+                    text-decoration: none;
+                }
+            }
+    
+            button.btn-projects:hover{
+                box-shadow: inset 300px 0 0 0 $primary-color;
+                a{
+                    color: $bg3-color;
+                }
+            }
+        }
+
+        svg.scroll-down{
+            margin: 4em auto;
+            display: flex;
+            justify-items: center;
+            justify-content: center;
+            align-items: center;
+            justify-self: center;
+        }
+    }
+
+    // Elements
+    svg.element1{
+        position: absolute;
+        top: 410px;
+        left: 274px;
+        z-index: -1;
+    }
+    svg.element2{
+       display: none;
+    }
+    svg.element3{
+        display: none;
+    }
+     svg.element4{
+        display: none;
+    }
+    svg.element5{
+        display: none;
+    }
+    svg.element6{
+        display: none;
+    }
+    svg.element7{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 675px){
+
+    section.hero-section{
+        .wrapper{
+            // Elements
+            svg.element1{
+                top: 440px;
+                left: 324px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px){
+    section.hero-section{
+        .wrapper{
+            //Elements
+            div.element1{
+                position: absolute;
+                top: 348px;
+                left: 290px;
+            }
+            div.element2{
+                display: block;
+                position: absolute;
+                top: 378px;
+                left: 510px;
+            }
+        }
+    } 
+}
+
+@media screen and (min-width: 1200px){
+    section.hero-section{
+        .wrapper{
+            width: 1200px;
+            margin: 0 auto;
+        
+        .left-orientation{
+            position: absolute;
+            padding-top: 4em;
+            display: block;
+            ul.left-socials{
+                display: flex;
+                flex-direction: column;
+                gap: 1.4em;
+                align-items: center;
+                list-style: none;
+                li.gmail{
+                    display: flex;
+                    flex-direction: column;
+                    a{
+                        color: $font-color;
+                        font-size: 14px;
+                        font-weight:500;
+                        font-family: $font-firacode;
+                        writing-mode: vertical-rl;
+                        text-decoration: none;
+                    }
+        
+                }
+                li.line{
+                    content: "";
+                    display: block;
+                    width: 1px;
+                    height: 90px;
+                    margin: 0px auto;
+                    background: #666666;
+                }
+            }
+
+            ul.left-socials{
+                position: relative;
+                li.social{
+                   a{
+                    position: relative;
+                    display: block;
+                    transition: ease-out 0.4s;
+                   }
+                    a:hover{    
+                        color: $primary-color;
+                        transform: rotate(0deg) skew(0deg) translate(0, -10px);  
+                    }
+                }
+                li.gmail{
+                    a{
+                        position: relative;
+                        display: block;
+                        transition: ease-out 0.4s;
+                       }
+                    a:hover{    
+                        color: $primary-color;
+                        transform: rotate(0deg) skew(0deg) translate(0, -10px);  
+                    }
+                }
+            }
+        }
+
+            .hero-content{
+                padding: 6em 7em;
+            }
+            //Elements
+            svg.element1{
+                position: absolute;
+                top: 458px;
+                left: 520px;
+            }
+            svg.element2{
+                display: block;
+                position: absolute;
+                top: 468px;
+                left: 780px;
+            }
+            svg.element3{
+                display: block;
+                position: absolute;
+                top: 148px;
+                left: 910px;
+            }
+            svg.element4{
+                display: block;
+                position: absolute;
+                top: 228px;
+                left: 810px;
+            }
+            svg.element5{
+                display: block;
+                position: absolute;
+                top: 188px;
+                left: 990px;
+            }
+            svg.element6{
+                display: block;
+                position: absolute;
+                top: 388px;
+                left: 1050px;
+            }
+            svg.element7{
+                display: block;
+                position: absolute;
+                top: 200px;
+                right: 0;
+            }
+            
+        }
+    } 
+}
