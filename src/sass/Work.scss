@@ -1,0 +1,106 @@
+@import '../index';
+
+
+section.work-section{
+    div.wrapper{
+        padding: 4em 1em;
+        h1{
+            font-size: clamp(36px, 7vw, 48px);
+            color: $primary-color;
+            text-align: center;
+        }
+        p{
+            padding-top: 16px;
+            color: $font-color;
+            text-align: center;
+            line-height: 24px;
+        }
+        div.work-container{
+            padding-top: 7em;
+            div.card-work{
+                background: $bg3-color;
+                border: 2px solid #666666;
+                border-radius: 7px;
+                max-width: 290px;
+                margin: 0 auto 32px;
+            
+                div.work-icon{
+                    margin: 14px;
+                    text-align: center;
+                    justify-content: center;
+                    align-items: center;
+                    color: $font-color;
+                    p{
+                        align-items: center;
+                        text-align: center;
+                        color: $primary-color;
+                        font-size: 20px;
+                        font-weight: bold;
+                        
+                    }
+                }
+                div.work-description{
+                    p{
+                        line-height: 20px;
+                        align-items: center;
+                        text-align: center;
+                        margin: 0 20px;
+                        color: $font-color;
+                        font-size: 14px;
+                        padding-bottom: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 578px){
+    section.work-section{
+        div.wrapper{
+            div.work-container{
+                display: flex;
+                flex-wrap: wrap;
+                div.card-work{
+                    max-width: 252px;
+                div.work-icon{
+                   font-size: 30px;
+                        p{            
+                            font-size: 18px;  
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px){
+    section.work-section{
+        div.wrapper{
+            p.specialize{
+                margin: 0 auto;
+                width: 520px;
+            }
+            div.work-container{
+                div.card-work{
+                    max-width: 276px;
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (min-width: 888px){
+    section.work-section{
+        div.wrapper{
+            div.work-container{
+                margin: 0 auto;
+                gap: 7px;
+                width: 890px;
+            }
+        }
+    }
+}
+

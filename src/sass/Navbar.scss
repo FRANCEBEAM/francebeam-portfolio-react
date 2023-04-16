@@ -2,11 +2,19 @@
 @import '../index';
 
 
+nav.navbar-hidden {
+    transform: translateY(-100%);
+  }
+
 nav.navbar-container{
     position: fixed;
     width: 100%;
-    background: $bg3-color;
-    .wrapper{
+    background: rgba(255, 255, 255, 0.85);
+    box-shadow: 0px 4px 10px rgba(102, 102, 102, 0.2);
+    backdrop-filter: blur(10px);
+    transition: transform 150ms ease-in-out;
+    z-index: 999;
+    div.wrapper{
         padding: 1.4em 1em;
         display: flex;
         justify-content: space-between;
@@ -66,6 +74,10 @@ nav.navbar-container{
                 transition: ease-in-out 0.3s;
                 background: $primary-color;
             }
+        }
+        ul.nav-items.active.navbar-hidden{
+            transform: translateY(-100%);
+            
         }
     }
 }

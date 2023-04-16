@@ -128,13 +128,13 @@ section.about-section{
 
 @media screen and (min-width:967px){
     section.about-section{
-        .wrapper{
+        div.wrapper{
             display: grid;
             grid-template-columns: 1fr 1fr;
         
             .right-content{
                 display: block;
-                padding: 0 4em;
+                padding: 0 3em;
             }
             
         }
@@ -145,7 +145,7 @@ section.about-section{
     section.about-section{
         div.wrapper{
             width: 1200px;
-            margin: auto 0;
+            margin: 0 auto;
             div.left-content{
                 svg.element1{
                     display: block;

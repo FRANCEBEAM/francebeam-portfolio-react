@@ -144,7 +144,7 @@ section.hero-section{
         .wrapper{
             width: 1200px;
             margin: 0 auto;
-        
+            position: relative;
         .left-orientation{
             position: absolute;
             padding-top: 4em;
@@ -208,49 +208,55 @@ section.hero-section{
             .hero-content{
                 padding: 6em 7em;
             }
+
             //Elements
             svg.element1{
                 position: absolute;
-                top: 458px;
-                left: 520px;
+                top: 474px;
+                left: 394px;
             }
             svg.element2{
                 display: block;
                 position: absolute;
-                top: 468px;
-                left: 780px;
+                top: 528px;
+                left: 740px;
             }
             svg.element3{
                 display: block;
                 position: absolute;
                 top: 148px;
-                left: 910px;
+                left: 810px;
             }
             svg.element4{
                 display: block;
                 position: absolute;
-                top: 228px;
-                left: 810px;
+                top: 248px;
+                left: 780px;
             }
             svg.element5{
                 display: block;
                 position: absolute;
                 top: 188px;
-                left: 990px;
+                left: 970px;
             }
             svg.element6{
                 display: block;
                 position: absolute;
-                top: 388px;
+                top: 412px;
                 left: 1050px;
             }
+        }
+    } 
+}
+
+@media screen and (min-width: 1472px){
+    section.hero-section{
             svg.element7{
                 display: block;
                 position: absolute;
-                top: 200px;
+                top: 180px;
                 right: 0;
+                margin-right: 0px;
             }
-            
-        }
-    } 
+    }
 }

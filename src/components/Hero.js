@@ -3,7 +3,7 @@ import '../sass/Hero.scss'
 import { Link } from 'react-router-dom'
 import { HiOutlineArrowNarrowRight } from 'react-icons/hi'
 import { FiGithub , FiFacebook} from 'react-icons/fi';
-import { HiChevronDoubleDown } from 'react-icons/hi';
+
 
 function Hero() {
   return (
@@ -45,7 +45,7 @@ function Hero() {
               </button>
            
           </div>
-
+        
           <svg className='element1' width="61" height="80" viewBox="0 0 41 50" fill="none" xmlns="http://www.w3.org/2000/svg">
             <mask id="path-1-inside-1_740_1155" fill="white">
             <path d="M9.49365 18.6206H40.873V49.9999H9.49365V18.6206Z"/>
@@ -180,17 +180,22 @@ function Hero() {
             <path d="M5.71752 12.3322C8.87522 12.3322 11.435 9.76493 11.435 6.59803C11.435 3.43112 8.87522 0.863831 5.71752 0.863831C2.55982 0.863831 0 3.43112 0 6.59803C0 9.76493 2.55982 12.3322 5.71752 12.3322Z" fill="#CCCCCC"/>
           </svg>
 
-          <svg className='element7' width="275" height="275" viewBox="0 0 275 275" fill="none" xmlns="http://www.w3.org/2000/svg">
+          {/* <svg className='element7' width="275" height="275" viewBox="0 0 275 275" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect width="134.146" height="134.146" fill="#332FD0" fill-opacity="0.2"/>
             <rect x="70.4268" y="70.4268" width="134.146" height="134.146" fill="#332FD0" fill-opacity="0.6"/>
             <rect x="140.854" y="140.854" width="134.146" height="134.146" fill="#332FD0" fill-opacity="0.9"/>
-          </svg>
+          </svg> */}
 
           <svg className='scroll-down' width="50" height="50" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M15 23.75L7.5 16.25L9.25 14.5L15 20.2187L20.75 14.5L22.5 16.25L15 23.75ZM15 16.25L7.5 8.75L9.25 7L15 12.7188L20.75 7L22.5 8.75L15 16.25Z" fill="#222222"/>
           </svg>
 
       </div>
+      <svg className='element7' width="275" height="275" viewBox="0 0 275 275" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="134.146" height="134.146" fill="#332FD0" fill-opacity="0.2"/>
+            <rect x="70.4268" y="70.4268" width="134.146" height="134.146" fill="#332FD0" fill-opacity="0.6"/>
+            <rect x="140.854" y="140.854" width="134.146" height="134.146" fill="#332FD0" fill-opacity="0.9"/>
+          </svg>
     </section>
   )
 }
