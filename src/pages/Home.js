@@ -1,8 +1,9 @@
 import React from 'react';
 import Hero from '../components/Hero';
 import About from '../components/About';
-import Work from '../components/Work'
-import Project from '../components/Project'
+import Work from '../components/Work';
+import Project from '../components/Project';
+import Contact from '../components/Contact';
 
 function Home() {
   return (
@@ -11,6 +12,7 @@ function Home() {
       <About />
       <Work />
       <Project />
+      <Contact />
     </div>
   )
 }

@@ -1,0 +1,116 @@
+
+@import '../index.scss';
+
+
+div.other-container{
+    background: $bg-color;
+    h1.other-head{
+        padding-top: 60px;
+        text-align: center;
+    }
+    div.wrapper{
+        padding: 4em 1em;
+        // margin: 0 auto;
+        justify-content: center;
+        a.card-project{
+            max-width: 346px;
+            padding-top: 26px;
+            margin: 0 auto;
+            list-style: none;
+            text-decoration: none;
+            display: flex;
+            justify-content: center;
+           
+            div.card-content{
+                background: $bg3-color;
+                border: 3px solid #E1E1E1;
+                box-shadow: 0px 4px 10px rgba(65, 53, 67, 0.15);
+                padding: 3em 2em;
+                div.project-icons{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    ul.project-links{
+                       display: flex;
+                       list-style: none;
+                       text-decoration: none;
+                        gap: 20px;
+                        li.project-link{
+                            list-style: none;
+                            text-decoration: none;
+                        }
+                    }
+                }
+
+                div.project-content{
+                    padding-top: 37px;
+                    h1.project-title{
+                       font-size: clamp(16px, 4vh,27px);
+                       text-align: left;
+                       color: $primary-color;
+                    }
+                    p{
+                        padding-top: 14px;
+                        font-size: 14px;
+                        line-height: 20px;
+                    }
+                    ul.tech-used{
+                        font-size: 12px;
+                        padding-top: 17px;
+                        list-style: none;
+                        text-decoration: none;
+                        li{
+                            font-family: $font-firacode;
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+    div.showmore{
+        justify-content: center;
+        display: flex;
+        button.btn-showmore{
+            font-size: 16px;
+            cursor: pointer;
+            background: transparent;
+            border: 2px solid $primary-color;
+            padding: 1.2em 2.6em;
+            font-weight: bold;
+            color: $primary-color;
+            font-family: $font-firacode;
+            text-decoration: none;
+        }
+    }
+}
+
+
+@media screen and (min-width: 768px){
+    div.other-container{
+        div.wrapper{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            gap: 20px;
+            a.card-project{
+                padding-top: 7px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1200px){
+    div.other-container{
+        div.wrapper{
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            a.card-project{
+                width: 2160px;
+            }
+     
+        }
+    }
+}
+

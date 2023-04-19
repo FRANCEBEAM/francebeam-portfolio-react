@@ -28,7 +28,7 @@ function Work() {
                         <p className='work-title'>FRONTEND DEVELOPMENT</p>
                     </div>
                     <div className='work-description'>
-                        <p>I craft and create own design that immersed in style layout, fonts and logo. Passionate of art or stylish for implementing in UI that visually appealing and provide enjoyable with ensuring a consistent and best practices.             
+                        <p>I love build responsive website that can adapt in different screen sizes. Proficient in working with popular frameworks and libraries such as Bootstrap, Tailwind CSS, jQuery and React JS, to develop and enhance the functionality of web applications.             
                         </p>
                     </div>
                 </div>
@@ -38,7 +38,7 @@ function Work() {
                         <p className='work-title'>BACKEND DEVELOPMENT</p>
                     </div>
                     <div className='work-description'>
-                        <p>I craft and create own design that immersed in style layout, fonts and logo. Passionate of art or stylish for implementing in UI that visually appealing and provide enjoyable with ensuring a consistent and best practices.             
+                        <p>I’m probably not the typical backend dev, but at least I have good ideas and background how they work. I can build website using PHP for web applications that meet the requirements of the functionality behind the website.             
                         </p>
                     </div>
                 </div>

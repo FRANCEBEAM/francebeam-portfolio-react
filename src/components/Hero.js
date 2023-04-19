@@ -38,11 +38,13 @@ function Hero() {
             <p className='desc'>I build amazing <span>website</span>, and <span>web design</span> for quality products with great user experiences and passionate of creating interactive. Let’s build and work together.</p>
 
             
-              <button className='btn-projects'>
-              <Link to='/' className='link-projects'>
-                  CHECK OUT MY PROJECTS <HiOutlineArrowNarrowRight size={22}/>
+              
+              <Link to='https://www.youtube.com/watch?v=HriYRoxWo1I' className='link-projects'>
+                <button className='btn-projects'>
+                    CHECK OUT MY PROJECTS <HiOutlineArrowNarrowRight size={22}/>
+                </button>
                 </Link>
-              </button>
+              
            
           </div>
         

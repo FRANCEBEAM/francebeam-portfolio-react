@@ -3,6 +3,7 @@ import '../sass/Project.scss';
 import { Link } from 'react-router-dom';
 import { FaExternalLinkAlt, FaGithub } from 'react-icons/fa';
 import { ProjectData } from './ProjectSource';
+import OtherProject from './OtherProject';
 
 function Project() {
   return (
@@ -31,7 +32,7 @@ function Project() {
                                     {item.description}
                                 </p>
                                 <ul className='tech-items'>
-                                    <li className='tech-item'>
+                                    <li className='tech-item' key={index}>
                                         {item.technologies}
                                     </li>
                                 </ul>
@@ -54,6 +55,7 @@ function Project() {
                     })
                 }
             </div>
+            <OtherProject />
         </div>
     </section>
   )

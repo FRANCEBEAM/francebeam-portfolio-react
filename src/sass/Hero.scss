@@ -44,30 +44,31 @@ section.hero-section{
                 font-weight: bold;
                 color: $primary-color;
             }
-            button.btn-projects{
-                color: $primary-color;
-                font-weight: bold;
-                cursor: pointer;
-                margin-top: 70px;
-                padding: 1.3em 1em;
-                background: none;
-                border: $primary-color 2px solid;
-                box-shadow: inset 0 0 0 0 $primary-color;
-                transition: ease-out 0.4s;
-                a.link-projects{
+
+            a.link-projects{
+                text-decoration: none;
+                button.btn-projects{
                     gap: 10px;
                     display: flex;
                     align-items: center;
+                    background: transparent;
+                    margin-top: 70px;
                     text-decoration: none;
+                    padding: 1.3em 1em;
+                    color: $primary-color;
+                    font-weight: bold;
+                    border: $primary-color 2px solid;
+                    box-shadow: inset 0 0 0 0 $primary-color;
+                    transition: ease-out 0.4s;
+                }
+                button.btn-projects:hover{
+                    box-shadow: inset 300px 0 0 0 $primary-color;
+                    color: $bg3-color;
+                  
                 }
             }
     
-            button.btn-projects:hover{
-                box-shadow: inset 300px 0 0 0 $primary-color;
-                a{
-                    color: $bg3-color;
-                }
-            }
+
         }
 
         svg.scroll-down{
