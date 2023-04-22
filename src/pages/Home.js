@@ -4,15 +4,18 @@ import About from '../components/About';
 import Work from '../components/Work';
 import Project from '../components/Project';
 import Contact from '../components/Contact';
+import Footer from '../components/Footer';
+
 
 function Home() {
   return (
-    <div className='main-wrapper'>
+    <div id='home'>
       <Hero />
       <About />
       <Work />
       <Project />
       <Contact />
+      <Footer />
     </div>
   )
 }

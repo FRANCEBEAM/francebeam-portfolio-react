@@ -1,14 +1,22 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import '../sass/Work.scss';
 import { MdViewQuilt, MdDesktopWindows } from 'react-icons/md';
-import { AiFillCode } from 'react-icons/ai'
-import { RiCodeBoxFill } from 'react-icons/ri'
-
+import { AiFillCode } from 'react-icons/ai';
+import { RiCodeBoxFill } from 'react-icons/ri';
+import AOS from 'aos';
+import "aos/dist/aos.css";
 
 function Work() {
+    useEffect(()=>{
+        AOS.init({
+            duration : 1000,
+            once: true,
+            easing: 'linear'
+        })
+    },[]);
   return (
-    <section className='work-section'>
-        <div className='wrapper'>
+    <section className='work-section' id="work">
+        <div className='wrapper' data-aos="fade-up">
             <h1>What I do?</h1>
             <p className='specialize'>As a front-end web developer, I specialize in crafting visually appealing and user-friendly websites that deliver outstanding user experiences.</p>
             <div className='work-container'>

@@ -1,0 +1,78 @@
+import React from 'react';
+import { HiOutlineMail } from 'react-icons/hi';
+import { IoCallOutline } from 'react-icons/io5';
+import { FaFacebook, FaGoogle , FaLinkedin} from 'react-icons/fa';
+import {  } from 'react-icons/'
+import { Link } from 'react-router-dom';
+import '../sass/Footer.scss'
+
+function Footer() {
+  return (
+    <footer className='footer-section'>
+        <div className='wrapper'>
+          <div className='first-row'>
+            <ul className='col-1'>
+              <li>
+                <h1>francebeam</h1>
+              </li>
+              <li>
+                <HiOutlineMail size={24}/>santanderfrancisbeam@gmail.com
+              </li>
+              <li>
+               <IoCallOutline size={24}/> 09076410794
+              </li>
+            </ul>
+            <ul className='col-2'>
+            <li className='nav-item'>
+              <Link className="nav-link" to="/">
+                Home
+              </Link>
+            </li>
+            <li className='nav-item'>
+              <Link className="nav-link" to="/">
+                About
+              </Link>
+            </li>
+            <li className='nav-item'>
+              <Link className="nav-link" to="/">
+                Projects
+              </Link>
+            </li>
+            <li className='nav-item'>
+              <Link className="nav-link" to="/">
+                Work
+              </Link>
+            </li>
+            <li className='nav-item'>
+              <Link className="nav-link" to="/">
+                Contact
+              </Link>
+            </li>
+            </ul>
+          </div>  
+          <div className='second-row'>
+            <p>© Francis Beam Santander 2023</p>
+            <ul className='socials'>
+              <li className='item-social'>
+                <Link className='link-social' to='/'>
+                  <FaFacebook size={24}/>
+                </Link>
+              </li>
+              <li className='item-social'>
+                <Link className='link-social' to='/'>
+                  <FaGoogle size={24}/>
+                </Link>
+              </li>
+              <li className='item-social'>
+                <Link className='link-social' to='/'>
+                  <FaLinkedin size={24}/>
+                </Link>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </footer>
+  )
+}
+
+export default Footer

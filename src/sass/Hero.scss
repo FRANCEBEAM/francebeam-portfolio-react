@@ -14,31 +14,29 @@ section.hero-section{
             p.sub-head{
                 font-family: $font-firacode;
                 color: #666666;
-                // font-size: 14px;
                 font-size: clamp(12px, 3vw, 17px);
+                animation-delay: 1500ms;
             }
             h2{
                 color: $primary-color;
-                // font-size: 17px;
                 font-size: clamp(17px, 4vw, 28px);
                 font-weight: bold;
+                animation-delay: 2000ms;
             }
             h1{
                 font-weight: bold;
                 padding-top: 4px;
                 color: $primary-color;
-                // font-size: 35px;
                 font-size: clamp(32px, 8vw, 58px);
+                animation-delay: 2500ms;
             }
             p.desc{
                 line-height: 24px;
                 color: $font-color;
                 padding-top: 6px;
-                // font-size: 14px;
                 font-size: clamp(12px, 7vw, 16px);
-                // max-width: 380px;
-                // max-width: clamp(380px, 9vw, 590px);
                 max-width: 470px;
+                animation-delay: 3000ms;
             }
             span{
                 font-weight: bold;
@@ -47,6 +45,7 @@ section.hero-section{
 
             a.link-projects{
                 text-decoration: none;
+                animation-delay: 3500ms;
                 button.btn-projects{
                     gap: 10px;
                     display: flex;
@@ -59,7 +58,7 @@ section.hero-section{
                     font-weight: bold;
                     border: $primary-color 2px solid;
                     box-shadow: inset 0 0 0 0 $primary-color;
-                    transition: ease-out 0.4s;
+                    transition: all 0.4s;
                 }
                 button.btn-projects:hover{
                     box-shadow: inset 300px 0 0 0 $primary-color;
@@ -150,6 +149,7 @@ section.hero-section{
             position: absolute;
             padding-top: 4em;
             display: block;
+            animation-delay: 4500ms;
             ul.left-socials{
                 display: flex;
                 flex-direction: column;
@@ -185,18 +185,18 @@ section.hero-section{
                    a{
                     position: relative;
                     display: block;
-                    transition: ease-out 0.4s;
+                    transition: all 0.4s;
                    }
                     a:hover{    
                         color: $primary-color;
-                        transform: rotate(0deg) skew(0deg) translate(0, -10px);  
+                        transform: rotate(0deg) skew(0deg) translate(0, -6px);  
                     }
                 }
                 li.gmail{
                     a{
                         position: relative;
                         display: block;
-                        transition: ease-out 0.4s;
+                        transition: all 0.4s;
                        }
                     a:hover{    
                         color: $primary-color;

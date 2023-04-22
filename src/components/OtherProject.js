@@ -1,11 +1,23 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { FaRegFolder, FaExternalLinkAlt } from 'react-icons/fa';
 import { FiGithub, FiExternalLink} from 'react-icons/fi';
 import { Link } from 'react-router-dom';
 import '../sass/OtherProject.scss';
 import { OtherProjectData } from './ProjectSource';
+import AOS from 'aos';
+import "aos/dist/aos.css";
+
 
 function OtherProject() {
+    useEffect(()=>{
+        AOS.init({
+            duration : 1000,
+            once: true,
+            easing: 'linear'
+        })
+    },[]);
+
+
   return (
     <div className='other-container'>
          <h1 className='other-head'>Other Projects</h1> 
@@ -13,18 +25,18 @@ function OtherProject() {
             {
                 OtherProjectData.map((item, index)=>{
                     return(
-                    <Link className='card-project' key={index}>
+                    <Link className='card-project' key={index} to={item.hostLink} data-aos="fade-up">
                         <div className='card-content' to={item.hostLink}>
                             <div className='project-icons'>
-                                <FaRegFolder size={32}/>
+                                <FaRegFolder size={36} color='#332FD0'/>
                                 <ul className='project-links'>
                                     <li className='project-link'>
-                                        <Link to={item.gitHubLink}>
+                                        <Link className='link' to={item.gitHubLink}>
                                             <FiGithub size={22}/>
                                         </Link>
                                     </li> 
                                     <li className='project-link'>
-                                        <Link to={item.hostLink}>
+                                        <Link className='link' to={item.hostLink}>
                                             <FiExternalLink size={22}/>
                                         </Link>
                                     </li> 

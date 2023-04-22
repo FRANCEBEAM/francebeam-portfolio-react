@@ -5,27 +5,28 @@
 div.other-container{
     background: $bg-color;
     h1.other-head{
-        padding-top: 60px;
+        padding-top: 76px;
         text-align: center;
     }
     div.wrapper{
-        padding: 4em 1em;
+        padding: 3em 1em;
         // margin: 0 auto;
         justify-content: center;
         a.card-project{
             max-width: 346px;
+            height: 100%;
             padding-top: 26px;
             margin: 0 auto;
             list-style: none;
             text-decoration: none;
             display: flex;
             justify-content: center;
-           
             div.card-content{
+                height: 100%;
                 background: $bg3-color;
                 border: 3px solid #E1E1E1;
                 box-shadow: 0px 4px 10px rgba(65, 53, 67, 0.15);
-                padding: 3em 2em;
+                padding: 1.4em 2em;
                 div.project-icons{
                     display: flex;
                     justify-content: space-between;
@@ -38,27 +39,33 @@ div.other-container{
                         li.project-link{
                             list-style: none;
                             text-decoration: none;
+                            transition: all 0.25s;
+                            a.link:hover{
+                                color: $primary-color;
+                            }
                         }
                     }
                 }
 
                 div.project-content{
-                    padding-top: 37px;
+                    padding-top: 14px;
                     h1.project-title{
-                       font-size: clamp(16px, 4vh,27px);
+                       font-size: clamp(14px, 4vh, 20px);
                        text-align: left;
-                       color: $primary-color;
+                       color: $font-color;
                     }
                     p{
-                        padding-top: 14px;
+                        padding-top: 12px;
                         font-size: 14px;
                         line-height: 20px;
+                        color: $font-color;
                     }
                     ul.tech-used{
                         font-size: 12px;
-                        padding-top: 17px;
+                        padding-top: 24px;
                         list-style: none;
                         text-decoration: none;
+                        color: #666666;
                         li{
                             font-family: $font-firacode;
                         }
@@ -67,6 +74,39 @@ div.other-container{
 
             }
         }
+        a.card-project{
+            display: block;
+            div.card-content{
+                transition: all 0.25s;  
+            }
+            div.card-content:hover{
+                transform: rotate(0deg) skew(0deg) translate(0, -7px);  
+                div.project-content{
+                    h1.project-title{
+                        transition: all 0.25s;  
+                        color: $primary-color;
+                    }
+                }
+            }
+        }
+        // a.card-project:nth-child(1){
+        //     animation-delay: 1000ms;
+        // }
+        // a.card-project:nth-child(2){
+        //     animation-delay: 2000ms;
+        // }
+        // a.card-project:nth-child(3){
+        //     animation-delay: 3000ms;
+        // }
+        // a.card-project:nth-child(4){
+        //     animation-delay: 4000ms;
+        // }
+        // a.card-project:nth-child(5){
+        //     animation-delay: 5000ms;
+        // }
+        // a.card-project:nth-child(6){
+        //     animation-delay: 6000ms;
+        // }
     }
     div.showmore{
         justify-content: center;
@@ -81,6 +121,11 @@ div.other-container{
             color: $primary-color;
             font-family: $font-firacode;
             text-decoration: none;
+        }
+        button.btn-showmore:hover{
+            background: $primary-color;
+            color: $bg3-color;
+            transition: ease-in-out 0.3s;
         }
     }
 }

@@ -143,16 +143,17 @@ section.about-section{
 
 @media screen and (min-width:1200px){
     section.about-section{
+        svg.element1{
+            display: block;
+            top: 1120px;
+            position: absolute;
+            left: 0;
+        }
         div.wrapper{
             width: 1200px;
             margin: 0 auto;
             div.left-content{
-                svg.element1{
-                    display: block;
-                    top: 1100px;
-                    position: absolute;
-                    left: 0;
-                }
+        
                 padding-top: 4em;
             }
             div.right-content{

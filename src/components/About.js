@@ -1,33 +1,42 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import '../sass/About.scss';
 import { FaHtml5, FaCss3Alt, FaReact, FaBootstrap } from 'react-icons/fa';
 import { IoLogoJavascript, IoLogoSass } from 'react-icons/io5';
-import { DiJqueryLogo } from 'react-icons/di'
-import { SiTailwindcss, SiPhp, SiMysql, SiAdobexd } from 'react-icons/si'
-import { BsGit } from 'react-icons/bs'
-import { FiFigma } from 'react-icons/fi'
+import { DiJqueryLogo } from 'react-icons/di';
+import { SiTailwindcss, SiPhp, SiMysql, SiAdobexd } from 'react-icons/si';
+import { BsGit } from 'react-icons/bs';
+import { FiFigma } from 'react-icons/fi';
+import AOS from 'aos';
+import "aos/dist/aos.css";
+
 
 function About() {
-  return (
-    <section className='about-section'>
-       <div className='wrapper'>
-            <div className='left-content'>
-                <svg className='element1' width="91" height="199" viewBox="0 0 91 199" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <mask id="path-1-inside-1_740_810" fill="white">
-                    <path d="M0 54H91V199H0V54Z"/>
-                    </mask>
-                    <path d="M0 54H91V199H0V54Z" fill="white"/>
-                    <path d="M0 54V53H-1V54H0ZM91 54H92V53H91V54ZM91 199V200H92V199H91ZM0 199H-1V200H0V199ZM0 55H91V53H0V55ZM90 54V199H92V54H90ZM91 198H0V200H91V198ZM1 199V54H-1V199H1Z" fill="#CDCDCD" mask="url(#path-1-inside-1_740_810)"/>
-                    <circle cx="27.0362" cy="27.0362" r="26.5362" fill="white" stroke="#CDCDCD"/>
-                </svg>
+    useEffect(() => {
+        AOS.init({
+          duration : 1000,
+          once: true
+        });
+      }, []);
 
+  return (
+    <section className='about-section' id='about'>
+        <svg className='element1' width="91" height="199" viewBox="0 0 91 199" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <mask id="path-1-inside-1_740_810" fill="white">
+            <path d="M0 54H91V199H0V54Z"/>
+            </mask>
+            <path d="M0 54H91V199H0V54Z" fill="white"/>
+            <path d="M0 54V53H-1V54H0ZM91 54H92V53H91V54ZM91 199V200H92V199H91ZM0 199H-1V200H0V199ZM0 55H91V53H0V55ZM90 54V199H92V54H90ZM91 198H0V200H91V198ZM1 199V54H-1V199H1Z" fill="#CDCDCD" mask="url(#path-1-inside-1_740_810)"/>
+            <circle cx="27.0362" cy="27.0362" r="26.5362" fill="white" stroke="#CDCDCD"/>
+        </svg>
+       <div className='wrapper' data-aos="fade-up">
+            <div className='left-content'>
                 <figure>
                     <img src="./assets/francebeam.jpg" alt="" />
                 </figure>
             </div>
             <div className='right-content'>
                 <div className='content'>
-                    <h1>About Me</h1>
+                    <h1 className='animate__animated animate__fadeIn'>About Me</h1>
                     <p>Hi, my name is Francis Beam Santander. I am a self - taught Web Developer and Web Designer. A college student of Bulacan State University based in Philippines and lives in Norzagaray Bulacan.</p>
                     <p>I help people to build amazing frontend with little bit of backend for important functionalities and love to design own product for their website so that they can improve and achieve the strategic approach for their business. I am looking forward to give services that I can do and apply my skills for the project.</p>
                 </div>

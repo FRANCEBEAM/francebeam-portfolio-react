@@ -11,6 +11,7 @@ import {
 import './index.scss'
 import Navbar from './components/Navbar'
 import Home from './pages/Home'
+import About from './components/About'
 
 
 const AppyLayout = () =>{
@@ -31,6 +32,10 @@ const router = createBrowserRouter([
         path: "/",
         element: <Home />,
       },
+      {
+        path: "about",
+        element: <About />
+      }
     ],
   },
 ]);

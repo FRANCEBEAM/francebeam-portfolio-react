@@ -1,14 +1,41 @@
 import React from 'react';
 import '../sass/Contact.scss';
-import { FaTelegramPlane } from 'react-icons/fa'
+import { FaTelegramPlane } from 'react-icons/fa';
+import { FiGithub, FiFacebook, FiLinkedin,  } from 'react-icons/fi';
+import { TbBrandGmail } from 'react-icons/tb'
+import { Link } from 'react-router-dom';
 
 
 function Contact() {
   return (
-    <section className='contact-section'>
+    <section className='contact-section' id='contact'>
         <div className='wrapper'>
             <h1>Send me a message!</h1>
             <p>Got a proposal or inquire about potential collaborations? I’m always open to new opportunities and would love to hear from you.</p>
+            <div className='socials-content'>
+                <ul className='item-socials'>
+                    <li className='item-social'>
+                        <Link className='link-social' to='https://github.com/FRANCEBEAM?tab=repositories'>
+                            <FiGithub size={26}/>
+                        </Link>
+                    </li>
+                    <li className='item-social'>
+                        <Link className='link-social' to='https://www.facebook.com/francisbeam.santander'>
+                            <FiFacebook size={26}/>
+                        </Link>
+                    </li>
+                    <li className='item-social'>
+                        <Link className='link-social' to='mailto:santanderfrancisbeam@gmail.com'>
+                            <TbBrandGmail size={26}/>
+                        </Link>
+                    </li>
+                    <li className='item-social'>
+                        <Link className='link-social' to='https://www.linkedin.com/in/francebeam'>
+                            <FiLinkedin size={26}/>
+                        </Link>
+                    </li>
+                </ul>
+            </div>
             <form className='form-content'>
                 <div className='grid-content'>
                     <div className='form-label'>

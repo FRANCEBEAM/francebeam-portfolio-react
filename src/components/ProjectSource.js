@@ -54,7 +54,7 @@ export const OtherProjectData = [
     {
         id: 1,
         title: 'Simple Todo list',
-        description: 'Lorem ipsum dolor sit amet consectetur. Velit turpis sem faucibus proin vulputate convallis diam. Ultrices pulvinar mattis habitant nunc varius quis. Viverra eget suspendisse quisque iaculis nulla congue nullam sit. Tincidunt ornare neque turpis sem ultrices mauris quam.',
+        description: 'Lorem ipsum dolor sit amet consectetur. Velit turpis sem faucibus proin vulputate convallis diam. Ultrices pulvinar mattis habitant nunc varius quis. Viverra eget suspendisse quisque iaculis nulla congue nullam sit.',
         technologies: ['HTML ', 'CSS ', 'JavaScript '],
         gitHubLink: 'https://github.com/react-icons/react-icons#configuration',
         hostLink: 'https://www.youtube.com/watch?v=qle6RXSCo4E'
@@ -62,23 +62,23 @@ export const OtherProjectData = [
     {
         id: 2,
         title: 'Weather App',
-        description: 'Lorem ipsum dolor sit amet consectetur. Velit turpis sem faucibus proin vulputate convallis diam. Ultrices pulvinar mattis habitant nunc varius quis. Viverra eget suspendisse quisque iaculis nulla congue nullam sit. Tincidunt ornare neque turpis sem ultrices mauris quam.',
+        description: 'Lorem ipsum dolor sit amet consectetur. Velit turpis sem faucibus proin vulputate convallis diam. Ultrices pulvinar mattis habitant nunc varius quis. Viverra eget suspendisse quisque iaculis nulla congue nullam sit.',
         technologies: ['HTML ', 'CSS ', 'JavaScript '],
         gitHubLink: 'https://github.com/react-icons/react-icons#configuration',
-        hostLink: 'https://www.youtube.com/watch?v=qle6RXSCo4E'
+        hostLink: 'https://www.youtube.com/watch?v=Uo0GgD9cHSc&list=PLxwHtUHlFZ5HNuHU6KgCDhbfE_9sUqi4h&index=9'
     },
     {
         id: 3,
         title: 'Simple Dictionary',
-        description: 'Lorem ipsum dolor sit amet consectetur. Velit turpis sem faucibus proin vulputate convallis diam. Ultrices pulvinar mattis habitant nunc varius quis. Viverra eget suspendisse quisque iaculis nulla congue nullam sit. Tincidunt ornare neque turpis sem ultrices mauris quam.',
+        description: 'Lorem ipsum dolor sit amet consectetur. Velit turpis sem faucibus proin vulputate convallis diam. Ultrices pulvinar mattis habitant nunc varius quis. Viverra eget suspendisse quisque iaculis nulla congue nullam sit.',
         technologies: ['HTML ', 'CSS ', 'JavaScript '],
         gitHubLink: 'https://github.com/react-icons/react-icons#configuration',
-        hostLink: 'https://www.youtube.com/watch?v=qle6RXSCo4E'
+        hostLink: 'https://react-icons.github.io/react-icons/search?q=linke'
     },
     {
         id: 4,
         title: 'Currency Converter',
-        description: 'Lorem ipsum dolor sit amet consectetur. Velit turpis sem faucibus proin vulputate convallis diam. Ultrices pulvinar mattis habitant nunc varius quis. Viverra eget suspendisse quisque iaculis nulla congue nullam sit. Tincidunt ornare neque turpis sem ultrices mauris quam.',
+        description: 'Lorem ipsum dolor sit amet consectetur. Velit turpis sem faucibus proin vulputate convallis diam. Ultrices pulvinar mattis habitant nunc varius quis. Viverra eget suspendisse quisque iaculis nulla congue nullam sit.',
         technologies: ['HTML ', 'CSS ', 'JavaScript '],
         gitHubLink: 'https://github.com/react-icons/react-icons#configuration',
         hostLink: 'https://www.youtube.com/watch?v=qle6RXSCo4E'
@@ -86,7 +86,7 @@ export const OtherProjectData = [
     {
         id: 5,
         title: 'Hyper View - Music Studio',
-        description: 'Lorem ipsum dolor sit amet consectetur. Velit turpis sem faucibus proin vulputate convallis diam. Ultrices pulvinar mattis habitant nunc varius quis. Viverra eget suspendisse quisque iaculis nulla congue nullam sit. Tincidunt ornare neque turpis sem ultrices mauris quam.',
+        description: 'Lorem ipsum dolor sit amet consectetur. Velit turpis sem faucibus proin vulputate convallis diam. Ultrices pulvinar mattis habitant nunc varius quis. Viverra eget suspendisse quisque iaculis nulla congue nullam sit.',
         technologies: ['HTML ', 'CSS '],
         gitHubLink: 'https://github.com/react-icons/react-icons#configuration',
         hostLink: 'https://www.youtube.com/watch?v=qle6RXSCo4E'
@@ -94,7 +94,7 @@ export const OtherProjectData = [
     {
         id: 6,
         title: 'Frogman Miniature',
-        description: 'Lorem ipsum dolor sit amet consectetur. Velit turpis sem faucibus proin vulputate convallis diam. Ultrices pulvinar mattis habitant nunc varius quis. Viverra eget suspendisse quisque iaculis nulla congue nullam sit. Tincidunt ornare neque turpis sem ultrices mauris quam.',
+        description: 'Lorem ipsum dolor sit amet consectetur. Velit turpis sem faucibus proin vulputate convallis diam. Ultrices pulvinar mattis habitant nunc varius quis. Viverra eget suspendisse quisque iaculis nulla congue nullam sit.',
         technologies: ['HTML ', 'CSS '],
         gitHubLink: 'https://github.com/react-icons/react-icons#configuration',
         hostLink: 'https://www.youtube.com/watch?v=qle6RXSCo4E'

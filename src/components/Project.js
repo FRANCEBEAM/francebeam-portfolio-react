@@ -1,20 +1,30 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import '../sass/Project.scss';
 import { Link } from 'react-router-dom';
 import { FaExternalLinkAlt, FaGithub } from 'react-icons/fa';
 import { ProjectData } from './ProjectSource';
 import OtherProject from './OtherProject';
+import AOS from 'aos';
+import "aos/dist/aos.css";
 
 function Project() {
+    useEffect(()=>{
+        AOS.init({
+            duration : 1000,
+            once: true,
+            easing: 'linear'
+        })
+    },[]);
+
   return (
-    <section className='project-section'>
+    <section className='project-section' id="projects">
         <div className='wrapper'>
         <h1>Projects</h1>
             <div className='project-container'>
                 {
                     ProjectData.map((item, index)=>{
                         return (
-                        <div className='card-project' key={index}>
+                        <div className='card-project' key={index} data-aos="fade-up">
                             <div className='right'>
                                 <figure>
                                     <img src={item.img} />

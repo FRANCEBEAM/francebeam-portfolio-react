@@ -5,7 +5,7 @@ section.work-section{
     div.wrapper{
         padding: 4em 1em;
         h1{
-            font-size: clamp(36px, 7vw, 48px);
+            font-size: clamp(36px, 7vw, 38px);
             color: $primary-color;
             text-align: center;
         }
@@ -16,7 +16,7 @@ section.work-section{
             line-height: 24px;
         }
         div.work-container{
-            padding-top: 7em;
+            padding-top: 3em;
             div.card-work{
                 background: $bg3-color;
                 border: 2px solid #666666;
