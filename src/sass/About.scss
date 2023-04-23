@@ -4,12 +4,12 @@
 section.about-section{
     background: $bg2-color;
     width: 100%;
+    svg.element1{
+        display: none;
+    }
     .wrapper{
         padding: 3em 1em;
         div.left-content{
-            svg.element1{
-                display: none;
-            }
             figure{
                 padding-top: 60px;
                 justify-content: center;
@@ -48,12 +48,10 @@ section.about-section{
                 padding-top: 30px;
                 div.front-technologies{
                     color: $font-white;
-                  
                     display: flex;
                     gap: 10px;
 
                     .icon-tech{
-                        cursor: pointer;
                         position: relative;
                         display: block;
                         transition: ease-out 0.4s;

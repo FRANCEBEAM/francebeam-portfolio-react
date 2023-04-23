@@ -99,6 +99,15 @@ section.work-section{
                 margin: 0 auto;
                 gap: 7px;
                 width: 890px;
+                div.card-work{
+                    cursor: default;
+                    transition: all 0.25s;
+                }
+                div.card-work:hover{
+                    border-bottom: $primary-color;
+                    transform: rotate(0deg) skew(0deg) translate(0, -10px);
+                    box-shadow: $primary-color 0px 1px, $primary-color 0px 2px, $primary-color 0px 3px, $primary-color 0px 4px, $primary-color 0px 5px, $primary-color 0px 6px;
+                }
             }
         }
     }

@@ -1,12 +1,58 @@
-import React from 'react';
+import React, {useRef, useState} from 'react';
 import '../sass/Contact.scss';
 import { FaTelegramPlane } from 'react-icons/fa';
 import { FiGithub, FiFacebook, FiLinkedin,  } from 'react-icons/fi';
 import { TbBrandGmail } from 'react-icons/tb'
 import { Link } from 'react-router-dom';
+import emailjs from '@emailjs/browser';
+import { toast, ToastContainer } from 'react-toastify';
+import "react-toastify/dist/ReactToastify.css";
+
 
 
 function Contact() {
+
+
+    //Email JS
+    const form = useRef();
+
+    const sendEmail = (e) => {
+      e.preventDefault();
+      emailjs.sendForm('service_r4hje4s', 'template_yzm87rs', form.current, 'nzZuhb8xN82QYdBT8')
+        .then((result) => {
+            e.target.reset();
+            console.log(result.text);
+            console.log("message sent");
+
+            toast.success('Message sent! 🥰 Thanks for reaching out', {
+                position: "top-right",
+                autoClose: 5000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                theme: "colored",
+                });
+
+
+        }, (error) => {
+            console.log(error.text);
+            console.log("message not sent")
+            
+            toast.error('🙉 Oops, something went wrong', {
+                position: "top-right",
+                autoClose: 5000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                theme: "colored",
+                });
+        });
+    };
+
   return (
     <section className='contact-section' id='contact'>
         <div className='wrapper'>
@@ -36,25 +82,37 @@ function Contact() {
                     </li>
                 </ul>
             </div>
-            <form className='form-content'>
+            <form className='form-content' ref={form} onSubmit={sendEmail}>
                 <div className='grid-content'>
                     <div className='form-label'>
                         <label>Name</label>
-                        <input className='input-name' type='text' placeholder='Enter your name'/>
+                        <input className='input-name' type='text' name="user_name" placeholder='Enter your name' required/>
                     </div>
                     <div className='form-label'>
                         <label>Email</label>
-                        <input className='input-email' type='email' placeholder='Enter your email'/>
+                        <input className='input-email' type='email' name="user_email" placeholder='Enter your email' required/>
                     </div>
                 </div>
                 <div className='form-label'>
                     <label>Message</label>
-                    <textarea className='input-message' placeholder='Let’s work together, I’m available for projects and work to discuss your project requirements and timeline.'/>
+                    <textarea className='input-message' name='message' placeholder='Let’s work together, I’m available for projects and work to discuss your project requirements and timeline.' required/>
                 </div>
-                <button className='btn-send' type='button'>
+                <button className='btn-send' type='submit' value='send'>
                     SEND <FaTelegramPlane size={22}/>
                 </button>
             </form>
+            <ToastContainer
+            position="top-right"
+            autoClose={5000}
+            hideProgressBar={false}
+            newestOnTop={false}
+            closeOnClick
+            rtl={false}
+            pauseOnFocusLoss
+            draggable
+            pauseOnHover
+            theme="colored"
+            />
         </div>
     </section>
   )

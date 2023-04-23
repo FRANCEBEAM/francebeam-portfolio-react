@@ -46,24 +46,27 @@ section.hero-section{
             a.link-projects{
                 text-decoration: none;
                 animation-delay: 3500ms;
+                margin-top: 70px;
                 button.btn-projects{
+                    cursor: pointer;
                     gap: 10px;
                     display: flex;
                     align-items: center;
                     background: transparent;
-                    margin-top: 70px;
+                    // margin-top: 70px;
                     text-decoration: none;
                     padding: 1.3em 1em;
                     color: $primary-color;
                     font-weight: bold;
                     border: $primary-color 2px solid;
-                    box-shadow: inset 0 0 0 0 $primary-color;
-                    transition: all 0.4s;
+                    border-radius: 6px;
+                    // box-shadow: inset 0 0 0 0 $primary-color;
+                    transition: all 0.25s;
                 }
                 button.btn-projects:hover{
-                    box-shadow: inset 300px 0 0 0 $primary-color;
-                    color: $bg3-color;
-                  
+                    // box-shadow: inset 300px 0 0 0 $primary-color;
+                    box-shadow: $primary-color -1px 1px, $primary-color -2px 2px, $primary-color -3px 3px, $primary-color -4px 4px, $primary-color -5px 5px, $primary-color -6px 6px, $primary-color -7px 7px;
+                    transform: translate3d(8px, -6px, 0);
                 }
             }
     
@@ -208,6 +211,9 @@ section.hero-section{
 
             .hero-content{
                 padding: 6em 7em;
+                a.link-projects{
+                    position: absolute;
+                }
             }
 
             //Elements

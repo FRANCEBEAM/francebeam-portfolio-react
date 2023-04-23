@@ -50,13 +50,13 @@ function Navbar() {
               </Link>
             </li>
             <li className='animate__animated animate__fadeInDown nav-item'>
-              <Link className="nav-link" to="#projects">
-                Projects
+              <Link className="nav-link" to="#work">
+                Work
               </Link>
             </li>
             <li className='animate__animated animate__fadeInDown nav-item'>
-              <Link className="nav-link" to="#work">
-                Work
+              <Link className="nav-link" to="#projects">
+                Projects
               </Link>
             </li>
             <li className='animate__animated animate__fadeInDown nav-item'>

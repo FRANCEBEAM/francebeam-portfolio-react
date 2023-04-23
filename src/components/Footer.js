@@ -2,8 +2,7 @@ import React from 'react';
 import { HiOutlineMail } from 'react-icons/hi';
 import { IoCallOutline } from 'react-icons/io5';
 import { FaFacebook, FaGoogle , FaLinkedin} from 'react-icons/fa';
-import {  } from 'react-icons/'
-import { Link } from 'react-router-dom';
+import { HashLink as Link } from 'react-router-hash-link';
 import '../sass/Footer.scss'
 
 function Footer() {
@@ -24,27 +23,27 @@ function Footer() {
             </ul>
             <ul className='col-2'>
             <li className='nav-item'>
-              <Link className="nav-link" to="/">
+              <Link className="nav-link" to="#home">
                 Home
               </Link>
             </li>
             <li className='nav-item'>
-              <Link className="nav-link" to="/">
+              <Link className="nav-link" to="#about">
                 About
               </Link>
             </li>
             <li className='nav-item'>
-              <Link className="nav-link" to="/">
-                Projects
-              </Link>
-            </li>
-            <li className='nav-item'>
-              <Link className="nav-link" to="/">
+              <Link className="nav-link" to="#work">
                 Work
               </Link>
             </li>
             <li className='nav-item'>
-              <Link className="nav-link" to="/">
+              <Link className="nav-link" to="#projects">
+                Projects
+              </Link>
+            </li>
+            <li className='nav-item'>
+              <Link className="nav-link" to="#contact">
                 Contact
               </Link>
             </li>
@@ -54,17 +53,17 @@ function Footer() {
             <p>© Francis Beam Santander 2023</p>
             <ul className='socials'>
               <li className='item-social'>
-                <Link className='link-social' to='/'>
+                <Link className='link-social' to='https://www.facebook.com/francisbeam.santander'>
                   <FaFacebook size={24}/>
                 </Link>
               </li>
               <li className='item-social'>
-                <Link className='link-social' to='/'>
+                <Link className='link-social' to='mailto:santanderfrancisbeam@gmail.com'>
                   <FaGoogle size={24}/>
                 </Link>
               </li>
               <li className='item-social'>
-                <Link className='link-social' to='/'>
+                <Link className='link-social' to='https://www.linkedin.com/in/francebeam'>
                   <FaLinkedin size={24}/>
                 </Link>
               </li>

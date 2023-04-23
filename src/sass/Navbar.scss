@@ -24,7 +24,7 @@ nav.navbar-container{
             a{
                 text-decoration: none;
                 list-style: none;
-                color: $font-color
+                color: $font-color;
             }
         }
         .menu-icon{
@@ -146,9 +146,20 @@ nav.navbar-container{
                     background: none;
                     button#btn-resume{
                         width: 100%;
+                        border-radius: 6px;
+                        box-shadow: inset 0px 0px 0px 0px $primary-color;
+                        transition: all 0.25s;
+                    }
+                    button#btn-resume:hover{
+                        box-shadow: inset 130px 0 0 0 $primary-color;
+                        color: $bg3-color;
+                    }
+                    .nav-link{
+                        transition: all 0.25s;
                     }
                     .nav-link:hover{
                         background: unset;
+                        color: $primary-color;
                     }
                 }
             }

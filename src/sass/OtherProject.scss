@@ -5,8 +5,9 @@
 div.other-container{
     background: $bg-color;
     h1.other-head{
-        padding-top: 76px;
+        padding-top: 86px;
         text-align: center;
+        font-size: clamp(36px, 7vw, 37px);
     }
     div.wrapper{
         padding: 3em 1em;
@@ -50,7 +51,7 @@ div.other-container{
                 div.project-content{
                     padding-top: 14px;
                     h1.project-title{
-                       font-size: clamp(14px, 4vh, 20px);
+                       font-size: clamp(14px, 4vh, 18px);
                        text-align: left;
                        color: $font-color;
                     }
