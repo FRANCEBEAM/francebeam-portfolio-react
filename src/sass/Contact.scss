@@ -3,10 +3,10 @@
 section.contact-section{
     background: $bg3-color;
     div.wrapper{
-        padding: 0 1em;
+        padding: 100px 1em;
+        min-height: 100vh;
         h1{
             font-size: clamp(24px, 6vw, 36px);
-            padding-top: 67px;
             text-align: center;
             color: $primary-color;
         }
@@ -22,7 +22,7 @@ section.contact-section{
             display: none;
         }
         form.form-content{
-            padding-top: 46px;
+            padding-top: 56px;
             display: flex;
             flex-direction: column;
             width: 100%;
@@ -140,6 +140,7 @@ section.contact-section{
                     flex-direction: column;
                     right: 0;
                     gap: 27px;
+                    justify-content: center;
                     li.item-social{
                     list-style: none;
                         a{

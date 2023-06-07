@@ -8,7 +8,8 @@ section.about-section{
         display: none;
     }
     .wrapper{
-        padding: 3em 1em;
+        padding: 100px 1em;
+        min-height: 100vh;
         div.left-content{
             figure{
                 padding-top: 60px;
@@ -143,22 +144,21 @@ section.about-section{
     section.about-section{
         svg.element1{
             display: block;
-            top: 1120px;
+            top: 880px;
             position: absolute;
-            left: 0;
+            left: 0px;
         }
         div.wrapper{
-            width: 1200px;
+            max-width: 1200px;
             margin: 0 auto;
             div.left-content{
-        
                 padding-top: 4em;
             }
             div.right-content{
                 svg.element2{
                     display: block;
                     position: absolute;
-                    top: 1400px;
+                    top: 600px;
                     right: 50px;
                 }
             }

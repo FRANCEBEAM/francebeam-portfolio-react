@@ -9,6 +9,15 @@ import "aos/dist/aos.css";
 
 
 function OtherProject() {
+
+   const truncate = (str, maxLength) => {
+        if (str.length > maxLength) {
+            return `${str.slice(0, maxLength)}...`
+        }
+        return str
+    }
+
+
     useEffect(()=>{
         AOS.init({
             duration : 1000,
@@ -44,10 +53,10 @@ function OtherProject() {
                             </div>
                             <div className='project-content'>
                                 <h1 className='project-title'>
-                                    {item.title}
+                                    {truncate(item.title, 17)}
                                 </h1>
                                 <p className='project-description'>
-                                    {item.description}
+                                    {truncate(item.description, 200)}
                                 </p>
                                 <ul className='tech-used'>
                                     <li className='tech'>
@@ -61,11 +70,11 @@ function OtherProject() {
                 })
             }
         </div>
-        <div className='showmore'>
+        {/* <div className='showmore'>
             <button className='btn-showmore' type='button'> 
                 Show More
             </button>
-        </div>
+        </div> */}
     </div>
   )
 }

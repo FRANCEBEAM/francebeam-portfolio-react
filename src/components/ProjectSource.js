@@ -8,95 +8,72 @@ export const ProjectData = [
             'IMS, ',
             'Business Store ',
             ],
-        technologies: ['PHP ', 'CSS ', 'Bootstrap5 ','jQuery '],
-        img: './assets/project-1.jpg',
-        description: 'Lorem ipsum dolor sit amet consectetur. Velit turpis sem faucibus proin vulputate convallis diam. Ultrices pulvinar mattis habitant nunc varius quis. Viverra eget suspendisse quisque iaculis nulla congue nullam sit. Tincidunt ornare neque turpis sem ultrices mauris quam. Viverra eget suspendisse quisque iaculis nulla congue nullam sit. Tincidunt ornare neque turpis sem ultrices mauris quam.',
-        hostLink: 'https://www.youtube.com/watch?v=qle6RXSCo4E',
-        gitHubLink: 'https://github.com/react-icons/react-icons#configuration'
+        technologies: ['PHP ', 'JavaScript ', 'Sass ','Material Design '],
+        img: './assets/project1.jpg',
+        description: 'Developed a fullstack web application using PHP, JavaScript and Sass from scratch. This web application are integrated by the backend using MySQL database. The user should create a account with have features of email verifications and nice form validation. After that, they can freely order or add to cart some products that are available on online and has a payment method of walk-in or order which will label on our database.',
+        hostLink: 'https://testwebsite0528.000webhostapp.com/',
+        gitHubLink: 'https://github.com/FRANCEBEAM/eCommerce-Develop-Update-'
     },
     {
         id: 2,
-        title: 'Travel Website React',
+        title: 'Netflix Clone React',
         sub: [
-            'Adventure',
-            'Travel',
+            'Movie',
+            'Fun',
             'Services'
         ],
         technologies: [
             'React ',
-            'CSS '
+            'Tailwind CSS '
         ],
-        img: './assets/project-2.jpg',
-        description: 'Lorem ipsum dolor sit amet consectetur. Velit turpis sem faucibus proin vulputate convallis diam. Ultrices pulvinar mattis habitant nunc varius quis. Viverra eget suspendisse quisque iaculis nulla congue nullam sit. Tincidunt ornare neque turpis sem ultrices mauris quam. Viverra eget suspendisse quisque iaculis nulla congue nullam sit. Tincidunt ornare neque turpis sem ultrices mauris quam.',
-        hostLink: 'https://sass-lang.com/documentation/breaking-changes/duplicate-var-flags#transition-period',
-        gitHubLink: 'https://dev.to/guimg/hide-menu-when-scrolling-in-reactjs-47bj'
+        img: './assets/project2.jpg',
+        description: 'My first React clone project uses the Axios library to fetch data from an API and make specific requests. I am experimenting and learning how to use useEffect and useState, which drive our web application and ensure smooth API integration.',
+        hostLink: 'https://francebeam.github.io/netflix-clone-reactjs/',
+        gitHubLink: 'https://github.com/FRANCEBEAM/netflix-clone-reactjs'
     },
     {
         id: 3,
-        title: 'Modern Muse React',
+        title: 'Frogman Ecommerce React',
         sub: [
-            'Interior Design, ',
-            'Portfolio, ',
-            'Services '
+            'Ecommerce, ',
+            'Gaming, ',
+            'Merch Shop '
         ],
         technologies: [
             'React ',
-            'Tailwind '
+            'Tailwind ',
+            'Node js '
         ],
-        img: './assets/project-1.jpg',
-        description: 'Lorem ipsum dolor sit amet consectetur. Velit turpis sem faucibus proin vulputate convallis diam. Ultrices pulvinar mattis habitant nunc varius quis. Viverra eget suspendisse quisque iaculis nulla congue nullam sit. Tincidunt ornare neque turpis sem ultrices mauris quam. Viverra eget suspendisse quisque iaculis nulla congue nullam sit. Tincidunt ornare neque turpis sem ultrices mauris quam.',
-        hostLink: 'https://www.youtube.com/watch?v=qle6RXSCo4E',
-        gitHubLink: 'https://github.com/react-icons/react-icons#configuration'
+        img: './assets/project3.jpg',
+        description: 'I developed a React E-commerce project from scratch. It includes products such as merchandise, stickers, patches, and game miniatures. This project follows the concept of an online store, although the backend is still a work in progress. Currently, it is only a frontend implementation.',
+        hostLink: 'https://francebeam.github.io/frogman-ecommerce-react/',
+        gitHubLink: 'https://github.com/FRANCEBEAM/frogman-ecommerce-react'
     }
 ]
 
 export const OtherProjectData = [
     {
         id: 1,
-        title: 'Simple Todo list',
-        description: 'Lorem ipsum dolor sit amet consectetur. Velit turpis sem faucibus proin vulputate convallis diam. Ultrices pulvinar mattis habitant nunc varius quis. Viverra eget suspendisse quisque iaculis nulla congue nullam sit.',
+        title: 'Drum pad App',
+        description: 'A high-quality drum pad sound that I obtained from assets in FL Studio 12. The drums sound quite realistic and can be used for jamming with friends and enjoying the creation of a realistic band sound that will excite the user',
         technologies: ['HTML ', 'CSS ', 'JavaScript '],
-        gitHubLink: 'https://github.com/react-icons/react-icons#configuration',
-        hostLink: 'https://www.youtube.com/watch?v=qle6RXSCo4E'
+        gitHubLink: 'https://github.com/FRANCEBEAM/Drumpad-App-JS',
+        hostLink: 'https://francebeam.github.io/Drumpad-App-JS/'
     },
     {
         id: 2,
-        title: 'Weather App',
-        description: 'Lorem ipsum dolor sit amet consectetur. Velit turpis sem faucibus proin vulputate convallis diam. Ultrices pulvinar mattis habitant nunc varius quis. Viverra eget suspendisse quisque iaculis nulla congue nullam sit.',
+        title: 'Todo List App',
+        description: 'A simple and fancy to-do list app where users can add tasks, delete them, and mark tasks as done. I developed this app to practice my knowledge of vanilla JavaScript and the DOM concept, which I find really cool.',
         technologies: ['HTML ', 'CSS ', 'JavaScript '],
-        gitHubLink: 'https://github.com/react-icons/react-icons#configuration',
-        hostLink: 'https://www.youtube.com/watch?v=Uo0GgD9cHSc&list=PLxwHtUHlFZ5HNuHU6KgCDhbfE_9sUqi4h&index=9'
+        gitHubLink: 'https://github.com/FRANCEBEAM/Todo-App-JS',
+        hostLink: 'https://francebeam.github.io/Todo-App-JS/'
     },
     {
         id: 3,
-        title: 'Simple Dictionary',
-        description: 'Lorem ipsum dolor sit amet consectetur. Velit turpis sem faucibus proin vulputate convallis diam. Ultrices pulvinar mattis habitant nunc varius quis. Viverra eget suspendisse quisque iaculis nulla congue nullam sit.',
+        title: 'Form Validation Community',
+        description: 'Creating form validation from scratch, which involves the use of RegEx and DOM. It follows standard validation practices that ensure the UI behaves according to the user\'s input, capturing any key input accurately.',
         technologies: ['HTML ', 'CSS ', 'JavaScript '],
-        gitHubLink: 'https://github.com/react-icons/react-icons#configuration',
-        hostLink: 'https://react-icons.github.io/react-icons/search?q=linke'
-    },
-    {
-        id: 4,
-        title: 'Currency Converter',
-        description: 'Lorem ipsum dolor sit amet consectetur. Velit turpis sem faucibus proin vulputate convallis diam. Ultrices pulvinar mattis habitant nunc varius quis. Viverra eget suspendisse quisque iaculis nulla congue nullam sit.',
-        technologies: ['HTML ', 'CSS ', 'JavaScript '],
-        gitHubLink: 'https://github.com/react-icons/react-icons#configuration',
-        hostLink: 'https://www.youtube.com/watch?v=qle6RXSCo4E'
-    },
-    {
-        id: 5,
-        title: 'Hyper View - Music Studio',
-        description: 'Lorem ipsum dolor sit amet consectetur. Velit turpis sem faucibus proin vulputate convallis diam. Ultrices pulvinar mattis habitant nunc varius quis. Viverra eget suspendisse quisque iaculis nulla congue nullam sit.',
-        technologies: ['HTML ', 'CSS '],
-        gitHubLink: 'https://github.com/react-icons/react-icons#configuration',
-        hostLink: 'https://www.youtube.com/watch?v=qle6RXSCo4E'
-    },
-    {
-        id: 6,
-        title: 'Frogman Miniature',
-        description: 'Lorem ipsum dolor sit amet consectetur. Velit turpis sem faucibus proin vulputate convallis diam. Ultrices pulvinar mattis habitant nunc varius quis. Viverra eget suspendisse quisque iaculis nulla congue nullam sit.',
-        technologies: ['HTML ', 'CSS '],
-        gitHubLink: 'https://github.com/react-icons/react-icons#configuration',
-        hostLink: 'https://www.youtube.com/watch?v=qle6RXSCo4E'
+        gitHubLink: 'https://github.com/FRANCEBEAM/Form-Validation-Community',
+        hostLink: 'https://francebeam.github.io/Form-Validation-Community/'
     },
 ]

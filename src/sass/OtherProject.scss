@@ -12,6 +12,7 @@ div.other-container{
     div.wrapper{
         padding: 3em 1em;
         // margin: 0 auto;
+        min-height: 100vh;
         justify-content: center;
         a.card-project{
             max-width: 346px;
@@ -40,7 +41,10 @@ div.other-container{
                         li.project-link{
                             list-style: none;
                             text-decoration: none;
-                            transition: all 0.25s;
+                            a.link{
+                                color: $font-color;
+                                transition: all 0.25s;
+                            }
                             a.link:hover{
                                 color: $primary-color;
                             }
@@ -109,26 +113,26 @@ div.other-container{
         //     animation-delay: 6000ms;
         // }
     }
-    div.showmore{
-        justify-content: center;
-        display: flex;
-        button.btn-showmore{
-            font-size: 16px;
-            cursor: pointer;
-            background: transparent;
-            border: 2px solid $primary-color;
-            padding: 1.2em 2.6em;
-            font-weight: bold;
-            color: $primary-color;
-            font-family: $font-firacode;
-            text-decoration: none;
-        }
-        button.btn-showmore:hover{
-            background: $primary-color;
-            color: $bg3-color;
-            transition: ease-in-out 0.3s;
-        }
-    }
+    // div.showmore{
+    //     justify-content: center;
+    //     display: flex;
+    //     button.btn-showmore{
+    //         font-size: 16px;
+    //         cursor: pointer;
+    //         background: transparent;
+    //         border: 2px solid $primary-color;
+    //         padding: 1.2em 2.6em;
+    //         font-weight: bold;
+    //         color: $primary-color;
+    //         font-family: $font-firacode;
+    //         text-decoration: none;
+    //     }
+    //     button.btn-showmore:hover{
+    //         background: $primary-color;
+    //         color: $bg3-color;
+    //         transition: ease-in-out 0.3s;
+    //     }
+    // }
 }
 
 
@@ -150,11 +154,20 @@ div.other-container{
     div.other-container{
         div.wrapper{
             margin: 0 auto;
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            a.card-project{
-                width: 2160px;
+            justify-content: left;
+            display: flex;
+            a.card-project {
+                flex: 0 0 31%;
+                margin: 0px;
             }
+            // display: inline-flex;
+            // a.card-project{
+            //     gap: 1px;
+            //     flex: 1fr 1fr 1fr;
+            //     // height: 100%;
+            //     // display: inline-block;
+            //     // width: 2160px;
+            // }
      
         }
     }

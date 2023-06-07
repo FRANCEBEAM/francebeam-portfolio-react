@@ -56,9 +56,10 @@ function Hero() {
               {text}
               <Cursor cursorColor='#332FD0'/>
             </h1>
-            <p className='animate__animated animate__fadeInDown desc'>I build amazing <span>website</span>, and <span>web design</span> for quality products with great user experiences and passionate of creating interactive. Let’s build and work together.</p>
-
-              <Link to='https://www.youtube.com/watch?v=HriYRoxWo1I' className='animate__animated animate__fadeIn link-projects'>
+            <p className='animate__animated animate__fadeInDown desc'>
+            I specialize in building amazing <span>websites</span> and <span>web designs</span> that provide high-quality products and exceptional user experiences. I am passionate about creating interactive and engaging digital experiences. Let’s build and work together.
+            </p>
+              <Link to='#projects' className='animate__animated animate__fadeIn link-projects'>
                 <button className='btn-projects'>
                     CHECK OUT MY PROJECTS <HiOutlineArrowNarrowRight size={22}/>
                 </button>

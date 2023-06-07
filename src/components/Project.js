@@ -8,6 +8,14 @@ import AOS from 'aos';
 import "aos/dist/aos.css";
 
 function Project() {
+
+    const truncate = (str, maxLength) => {
+        if (str.length > maxLength) {
+            return `${str.slice(0, maxLength)}...`
+        }
+        return str
+    }
+
     useEffect(()=>{
         AOS.init({
             duration : 1000,
@@ -39,7 +47,7 @@ function Project() {
                                     {item.title}
                                 </h1>
                                 <p className='project-description'>
-                                    {item.description}
+                                    {truncate(item.description, 320)}
                                 </p>
                                 <ul className='tech-items'>
                                     <li className='tech-item' key={index}>

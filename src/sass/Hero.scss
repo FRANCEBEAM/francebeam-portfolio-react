@@ -4,7 +4,7 @@
 section.hero-section{
     .wrapper{
         padding: 117px 1em;
-        padding-bottom: 0px;
+        min-height: 100vh;
         .left-orientation{
            display: none;
         }
@@ -18,8 +18,9 @@ section.hero-section{
                 animation-delay: 1500ms;
             }
             h2{
+                padding-top: 11px;
                 color: $primary-color;
-                font-size: clamp(17px, 4vw, 28px);
+                font-size: clamp(19px, 4vw, 32px);
                 font-weight: bold;
                 animation-delay: 2000ms;
             }
@@ -27,14 +28,14 @@ section.hero-section{
                 font-weight: bold;
                 padding-top: 4px;
                 color: $primary-color;
-                font-size: clamp(32px, 8vw, 58px);
+                font-size: clamp(31px, 8vw, 62px);
                 animation-delay: 2500ms;
             }
             p.desc{
                 line-height: 24px;
                 color: $font-color;
-                padding-top: 6px;
-                font-size: clamp(12px, 7vw, 16px);
+                padding-top: 16px;
+                font-size: clamp(12px, 7vw, 14px);
                 max-width: 470px;
                 animation-delay: 3000ms;
             }
@@ -46,14 +47,15 @@ section.hero-section{
             a.link-projects{
                 text-decoration: none;
                 animation-delay: 3500ms;
-                margin-top: 70px;
+                // margin-top: 170px;
+                margin-top: 46px;
                 button.btn-projects{
                     cursor: pointer;
                     gap: 10px;
                     display: flex;
                     align-items: center;
                     background: transparent;
-                    // margin-top: 70px;
+                    // margin-top: 46px;
                     text-decoration: none;
                     padding: 1.3em 1em;
                     color: $primary-color;
@@ -74,12 +76,27 @@ section.hero-section{
         }
 
         svg.scroll-down{
-            margin: 4em auto;
-            display: flex;
-            justify-items: center;
-            justify-content: center;
-            align-items: center;
-            justify-self: center;
+           width: 100%;
+           justify-content: center;
+           bottom: 0;
+           position: absolute;
+           animation-name: scrolldown;
+           animation-duration: 2s;
+           animation-iteration-count: infinite;
+           animation-timing-function: ease;
+           transition:all .3s;
+        }
+
+        @keyframes scrolldown{
+            0%{
+                transform: translateY(0px)
+            }
+            50%{
+                transform: translateY(-40px);
+            }
+            100%{
+                transform: translateY(0px);
+            }
         }
     }
 
@@ -145,13 +162,15 @@ section.hero-section{
 @media screen and (min-width: 1200px){
     section.hero-section{
         .wrapper{
-            width: 1200px;
+            max-width: 1200px;
             margin: 0 auto;
             position: relative;
         .left-orientation{
             position: absolute;
             padding-top: 4em;
             display: block;
+            left: 0px;
+            bottom: 0px;
             animation-delay: 4500ms;
             ul.left-socials{
                 display: flex;
@@ -219,7 +238,7 @@ section.hero-section{
             //Elements
             svg.element1{
                 position: absolute;
-                top: 474px;
+                top: 514px;
                 left: 394px;
             }
             svg.element2{
@@ -261,9 +280,13 @@ section.hero-section{
             svg.element7{
                 display: block;
                 position: absolute;
-                top: 180px;
+                top: 280px;
                 right: 0;
-                margin-right: 0px;
+            }
+            div.wrapper{
+                div.hero-content{
+                    padding-top: 120px;
+                }
             }
     }
 }

@@ -31,14 +31,14 @@ function About() {
        <div className='wrapper' data-aos="fade-up">
             <div className='left-content'>
                 <figure>
-                    <img src="./assets/francebeam.jpg" alt="" />
+                    <img src="./assets/francebeam.jpg" alt="francis" />
                 </figure>
             </div>
             <div className='right-content'>
                 <div className='content'>
                     <h1 className='animate__animated animate__fadeIn'>About Me</h1>
-                    <p>Hi, my name is Francis Beam Santander. I am a self - taught Web Developer and Web Designer. A college student of Bulacan State University based in Philippines and lives in Norzagaray Bulacan.</p>
-                    <p>I help people to build amazing frontend with little bit of backend for important functionalities and love to design own product for their website so that they can improve and achieve the strategic approach for their business. I am looking forward to give services that I can do and apply my skills for the project.</p>
+                    <p>Hi, my name is Francis Beam Santander. I am a self-taught web developer and UX/UI designer. I am graduating student college at Bulacan State University in the Philippines, and I live in Norzagaray, Bulacan.</p>
+                    <p>I enjoy assisting people in building amazing frontends with a touch of backend development to incorporate essential functionalities. I also have a passion for designing unique products for websites, enabling businesses to enhance their strategic approaches. I am excited to provide my services and apply my skills to various projects.</p>
                 </div>
                 <div className='stacks'>
                     <div className='technologies-stack'>
