@@ -1,6 +1,6 @@
 import React from 'react'
 import '../sass/Hero.scss'
-import { Link } from 'react-router-dom'
+import { HashLink as Link } from 'react-router-hash-link'
 import { HiOutlineArrowNarrowRight } from 'react-icons/hi'
 import { FiGithub , FiFacebook} from 'react-icons/fi';
 import { Typewriter, Cursor  } from 'react-simple-typewriter';

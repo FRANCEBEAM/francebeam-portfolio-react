@@ -1,45 +1,29 @@
 import React from "react";
-import { createRoot } from "react-dom/client";
-import {
-  createBrowserRouter,
-  RouterProvider,
-  Route,
-  Link,
-  Outlet,
-} from "react-router-dom";
+import ReactDOM from 'react-dom';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+
 
 import './index.scss'
 import Navbar from './components/Navbar'
 import Home from './pages/Home'
-import About from './components/About'
 
 
-const AppyLayout = () =>{
+
+const AppLayout = () =>{
     return(
       <>
         <Navbar />
-        <Outlet />
+        <Routes>
+          <Route path="/" element={<Home />} />
+        </Routes>
       </>
     )
 }
 
 
-const router = createBrowserRouter([
-  {
-    element: <AppyLayout />,
-    children: [
-      {
-        path: "/",
-        element: <Home />,
-      },
-      {
-        path: "about",
-        element: <About />
-      }
-    ],
-  },
-]);
-
-createRoot(document.getElementById("root")).render(
-  <RouterProvider router={router} />
+ReactDOM.render(
+  <Router basename='/francebeam-portfolio-react'>
+    <AppLayout />
+  </Router>,
+  document.getElementById('root')
 );
