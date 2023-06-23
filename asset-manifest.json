@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/francebeam-portfolio-react/static/css/main.97275581.css",
-    "main.js": "/francebeam-portfolio-react/static/js/main.7a8b6adc.js",
+    "main.js": "/francebeam-portfolio-react/static/js/main.2896f495.js",
     "index.html": "/francebeam-portfolio-react/index.html",
     "main.97275581.css.map": "/francebeam-portfolio-react/static/css/main.97275581.css.map",
-    "main.7a8b6adc.js.map": "/francebeam-portfolio-react/static/js/main.7a8b6adc.js.map"
+    "main.2896f495.js.map": "/francebeam-portfolio-react/static/js/main.2896f495.js.map"
   },
   "entrypoints": [
     "static/css/main.97275581.css",
-    "static/js/main.7a8b6adc.js"
+    "static/js/main.2896f495.js"
   ]
 }
