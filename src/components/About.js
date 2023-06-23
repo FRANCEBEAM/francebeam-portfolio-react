@@ -37,8 +37,8 @@ function About() {
             <div className='right-content'>
                 <div className='content'>
                     <h1 className='animate__animated animate__fadeIn'>About Me</h1>
-                    <p>Hi, my name is Francis Beam Santander. I am a self-taught web developer and UX/UI designer. I am graduating student college at Bulacan State University in the Philippines, and I live in Norzagaray, Bulacan.</p>
-                    <p>I enjoy assisting people in building amazing frontends with a touch of backend development to incorporate essential functionalities. I also have a passion for designing unique products for websites, enabling businesses to enhance their strategic approaches. I am excited to provide my services and apply my skills to various projects.</p>
+                    <p>Hi, my name is Francis Beam Santander. I am fresh graduate of Bulacan State University - Sarmiento Campus, holding a Bachelor's degree in Information Technology . Throughout my academic journey, I have cultivated a deep passion for front-end development and UX/UI design.</p>
+                    <p>I enjoy assisting people in building amazing frontends with a touch of backend development to incorporate essential functionalities. I also have a passion for designing unique products for websites, enabling businesses to enhance their strategic approaches. I am excited to apply my skills to various projects.</p>
                 </div>
                 <div className='stacks'>
                     <div className='technologies-stack'>
